@@ -6,10 +6,10 @@
   </div>
 
 <article class="kijker">
-
+<h2>// Beeld van de week //</h2>
   <span><%=post[5].tags %></span>
-  <%- include('overzicht1', {post: post[5], index: 5, imageURL: 5 }); -%>
-  
+  <%- include('kijker', {post: post[5], index: 5, imageURL: 5 }); -%>
+
 </article>
 </div>
 <%- include('footer'); -%>

@@ -50,7 +50,7 @@ body {
 }
 
 .p-grid {
-  padding-bottom: 10px;
+  padding-bottom: 70px;
   margin-left: 10px;
 }
 
@@ -70,12 +70,25 @@ body {
 
 }
 
+.kijker {
+  background-color: #ED6A5A;
+  padding: 10px;
+  color: white;
+}
+
+
 .terug {
   border: 1px solid black;
   padding: 5px;
   text-decoration: none;
   color: white;
   background-color: black;
+}
+
+.terug1 {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 .uitvoerder {
@@ -276,4 +289,9 @@ input[type=submit]:hover {
 
 .p-item {
   padding-bottom: 10px;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
 }
