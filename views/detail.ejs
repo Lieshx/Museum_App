@@ -1,0 +1,20 @@
+<%- include('header'); -%>
+<div class="intro">
+<article>
+  <h1><%=post.titel %></h1>
+  <div class="samen">
+  <address class="uitvoerder"><%=post.uitvoerder %></address><date><%=post.datering %></date>
+  </div>
+  <div>
+  <p class="info"><%=post.beschrijving %></p>
+  <img src="<%= post.imageURL %>" alt="afbeelding" class="portfolio-image">
+  </div>
+  <div>
+  <br>
+  <a href="/overzicht" class="terug">Terug naar overzicht</a>
+  </div>
+
+</article>
+<!-- meer toevoegen hier... -->
+</div>
+<%- include('footer'); -%>

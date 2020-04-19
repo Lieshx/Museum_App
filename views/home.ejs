@@ -1,0 +1,15 @@
+<%- include('header'); -%>
+<div class="intro">
+  <div>
+    <h2>Welkom bij dit virtuele museum met Pablo Picasso zijn bekendste werken.</h2>
+    <p>Om onze dagen thuis tijdens deze crisis nuttig op te vullen, maakte ik in samenwerking met het museum van Picasso dit virtuele museum. Neem een kijkje, sorteer op Picasso's bekende periode's uit zijn leven en leer zijn verschillende schildertechnieken die hij beoefende tijdens zijn carrière.</p>
+  </div>
+
+<article class="kijker">
+
+  <span><%=post[5].tags %></span>
+  <%- include('overzicht1', {post: post[5], index: 5, imageURL: 5 }); -%>
+  
+</article>
+</div>
+<%- include('footer'); -%>

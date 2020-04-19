@@ -1,0 +1,10 @@
+<!-- dit zorgt effectief voor de blogposts  -->
+<article>
+  <h3><%=post.titel %></h3>
+  <date><%=post.datering %></date>
+  <p><%=post.extra %></p>
+  <img src="<%= post.imageURL %>" alt="afbeelding" class="image">
+  <br>
+  <a class= "terug" href="/overzicht1/<%=index %>">Meer lezen...</a>
+  <% var filter = post.filter %>
+</article>

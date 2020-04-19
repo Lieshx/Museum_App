@@ -1,0 +1,40 @@
+<%- include("header"); -%>
+<div class="filter">
+  <div class="button-group">
+    <button class="p-button" data-filter=".blauw">De blauwe periode</button>
+    <button class="p-button" data-filter=".roos">De roze periode</button>
+    <button class="p-button" data-filter=".kubisme">Kubisme</button>
+    <button class="p-button" data-filter=".classicisme">Classicisme</button>
+    <button class="p-button" data-filter=".surrealisme">Surrealisme</button>
+    <button class="p-button" data-filter=".barbaars">De barbaarse periode</button>
+    <button class="p-button" data-filter=".naoorlog">Naoorlogse jaren</button>
+    <button class="p-button" data-filter=".later">Het latere werk</button>
+  </div>
+</div>
+
+<section class="p-grid">
+    <% for (let i=0; i<posts.length; i++) { %>
+    <div class="p-item <%= posts[i].filter %>">
+        <%- include('overzicht1', {post: posts[i], index: i, imageURL: i }); -%>
+
+    </div>
+    <% } // close forloop %>
+</section>
+
+<script>
+
+    var $grid = $('.p-grid').isotope({
+        itemSelector: '.p-item'
+    });
+
+    $('.p-button').click(function() {
+        var selector = $(this).attr('data-filter');
+        $('.p-grid').isotope({
+            filter: selector
+        });
+        return false;
+    })
+
+</script>
+
+<%- include("footer"); -%>
